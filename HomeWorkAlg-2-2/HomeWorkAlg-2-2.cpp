@@ -21,6 +21,7 @@ int main()
     else {
         int* mass = new int [number + 1] {0};
         std::cout << Fibonacci(number, mass) << std::endl;
+        delete[] mass;
     }
     return 0;
 }
